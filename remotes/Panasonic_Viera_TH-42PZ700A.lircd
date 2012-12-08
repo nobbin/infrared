@@ -1,0 +1,122 @@
+# Please make this file available to others
+# by sending it to <lirc@bartelmus.de>
+#
+# this config file was automatically generated
+# using lirc-0.9.0(default) on Fri Oct 26 23:52:49 2012
+#
+# contributed by Ian Burns
+#
+# brand: Panasonic
+# model no. of remote control: <not labeled>
+# devices being controlled by this remote:
+# Panasonic Viera TH-42PZ700A 42" Plasma
+#
+# Notes:
+# KEY_DVD_* keys occur when the switch is positioned to DVD
+# KEY_VCR_* keys occur when the switch is positioned to VCR
+# KEY_DISCRETE_* codes were extracted from ftp://ftp.panasonic.com/pub/panasonic/Drivers/Monitors/Discrete-remote-control-codesProntoCCFformat.pdf
+# All discrete codes work on this TV, except for KEY_DISCRETE_COMPONENT1 and KEY_DISCRETE_COMPONENT2
+#
+
+
+begin remote
+
+  name  Panasonic_TH-42PZ700A
+  bits           32
+  flags SPACE_ENC|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  header       3467  1711
+  one           449  1277
+  zero          449   413
+  ptrail        443
+  pre_data_bits   16
+  pre_data       0x4004
+  gap          127683
+  toggle_bit_mask 0x0
+
+      begin codes
+          KEY_POWER                0x0100BCBD
+          KEY_TV                   0x01400C4D
+          KEY_AV                   0x0100A0A1
+          KEY_ASPECT               0x01207B5A
+          KEY_LINK                 0x01908D1C
+          KEY_OPTION               0x0190E574
+          KEY_SDCARD               0x0190D544
+          KEY_GUIDE                0x0190E170
+          KEY_EXIT                 0x0100CBCA
+          KEY_LEFT                 0x01007273
+          KEY_UP                   0x01005253
+          KEY_RIGHT                0x0100F2F3
+          KEY_DOWN                 0x0100D2D3
+          KEY_OK                   0x01009293
+          KEY_MENU                 0x01004A4B
+          KEY_RETURN               0x01002B2A
+          KEY_RED                  0x01000E0F
+          KEY_GREEN                0x01008E8F
+          KEY_YELLOW               0x01004E4F
+          KEY_BLUE                 0x0100CECF
+          KEY_TEXT                 0x0180C041
+          KEY_STTL                 0x0180A021
+          KEY_INDEX                0x01801091
+          KEY_HOLD                 0x01809011
+          KEY_1                    0x01000809
+          KEY_2                    0x01008889
+          KEY_3                    0x01004849
+          KEY_4                    0x0100C8C9
+          KEY_5                    0x01002829
+          KEY_6                    0x0100A8A9
+          KEY_7                    0x01006869
+          KEY_8                    0x0100E8E9
+          KEY_9                    0x01001819
+          KEY_0                    0x01009899
+          KEY_INFO                 0x01009C9D
+          KEY_MUTE                 0x01004C4D
+          KEY_CHANNELUP            0x01002C2D
+          KEY_CHANNELDOWN          0x0100ACAD
+          KEY_VOLUMEUP             0x01000405
+          KEY_VOLUMEDOWN           0x01008485
+
+          KEY_DVD_PROGRAMUP        0x0D002C21
+          KEY_DVD_PROGRAMDOWN      0x0D00ACA1
+          KEY_DVD_REWIND           0x0D00929F
+          KEY_DVD_FASTFORWARD      0x0D00525F
+          KEY_DVD_STOP             0x0D00000D
+          KEY_DVD_PLAYPAUSE        0x0D00606D
+          KEY_DVD_PLAY             0x0D00505D
+          KEY_DVD_POWER            0x0D00BCB1
+          KEY_DVD_RECORD           0x0D00101D
+
+          KEY_VCR_PROGRAMUP        0x09002C25
+          KEY_VCR_PROGRAMDOWN      0x0900ACA5
+          KEY_VCR_REWIND           0x09004049
+          KEY_VCR_FASTFORWARD      0x0900C0C9
+          KEY_VCR_STOP             0x09000009
+          KEY_VCR_PLAYPAUSE        0x09006069
+          KEY_VCR_PLAY             0x09005059
+          KEY_VCR_POWER            0x0900BCB5
+          KEY_VCR_RECORD           0x09001019
+
+          KEY_MULTIPIP             0x01006766
+          KEY_SURROUND             0x01008C8D
+          KEY_I_II                 0x0100CCCD
+
+          KEY_DISCRETE_POWERON     0x01007C7D
+          KEY_DISCRETE_POWEROFF    0x0100FCFD
+          KEY_DISCRETE_COMPONENT1  0x01203E1F
+          KEY_DISCRETE_COMPONENT2  0x0120BE9F
+          KEY_DISCRETE_HDMI1       0x01200D2C
+          KEY_DISCRETE_HDMI2       0x01208DAC
+          KEY_DISCRETE_HDMI3       0x01204D6C
+          KEY_DISCRETE_VIDEO1      0x01008081
+          KEY_DISCRETE_VIDEO2      0x01004041
+          KEY_DISCRETE_VIDEO3      0x0100C0C1
+          KEY_DISCRETE_VIDEO4      0x01002021
+          KEY_DISCRETE_PCVGA       0x01005E5F
+
+      end codes
+
+end remote
+
+

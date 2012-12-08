@@ -1,0 +1,6 @@
+
+The folders:
+convert - Scripts and source files for converting various formats to lirc
+doc - Contains various documentation on IR codes collected from around the internet
+remotes - Lirc codes for various devices
+

@@ -1,0 +1,6 @@
+panasonictv_ccf.lircd - This the the output of pronto2lirc.py, lirc raw codes, can be converted to normal lirc codes using 'irrecord -a'
+pronto2lirc.py - Python script from lirc (http://www.lirc.org/html/pronto2lirc.html) for converting Pronto CCF into lirc raw codes
+yamahanec2lirc.py - Python script for converting Yamaha/NEC codes into lirc format, use with yamaha_rxv.csv
+panasonictv_ccf.txt - Pronto CCF codes copied from Discrete-remote-control-codesProntoCCFformat.pdf
+yamaha_rxv.csv - CSV of codes from jpegs in doc/yamaha_rxv. There are probably mistakes in this file, the 767 codes have been tested, but not the other receivers
+
